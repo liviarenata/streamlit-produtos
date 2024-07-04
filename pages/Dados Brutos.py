@@ -48,8 +48,8 @@ with st.sidebar.expander('Quantidade de parcelas'):
 query = '''
 Produto in @produtos and \
 `Categoria do Produto` in @categoria and \
-@preco[0] <= Preço <= @preco[1] and \
-@frete[0] <= Frete <= @frete[1] and \
+@preco[0] <= `Preço` <= @preco[1] and \
+@frete[0] <= `Frete` <= @frete[1] and \
 @data_compra[0] <= `Data da Compra` <= @data_compra[1] and \
 Vendedor in @vendedores and \
 `Local da compra` in @local_compra and \
